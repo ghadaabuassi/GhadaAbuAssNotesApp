@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".SigininActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_emial_user_singin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="100dp"
+                android:ems="13"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName"
+                android:hint="Email"
+                />
+            <EditText
+                android:id="@+id/edt_password_user_siginin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:hint="password"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                />
+            <Button
+                android:id="@+id/linear_siginin"
+                android:layout_width="250dp"
+                android:layout_height="63dp"
+                android:onClick="linear_siginin"
+                android:textColor="@color/orange"
+                android:background="@color/white"
+                android:layout_marginTop="40dp"
+                android:text="SignIn"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/tv_have_account"
+                android:layout_marginTop="50dp"
+                android:onClick="tv_have_account"
+                android:textColor="@color/white"
+                android:text="I  don't have account !"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:id="@+id/tv_forgeting_Pasword"
+                android:layout_marginTop="20dp"
+                android:onClick="tv_have_account"
+                android:textColor="@color/main_blue_color"
+                android:text="Forgetting Password ? click here "
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
